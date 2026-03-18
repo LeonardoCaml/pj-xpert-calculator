@@ -1,0 +1,157 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Freelance Aurora Design System */
+:root {
+  /* Light mode - clean and professional */
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.585 0.233 264);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0.005 264);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.656 0.241 354);
+  --accent-foreground: oklch(0.985 0 0);
+  --success: oklch(0.696 0.17 162.48);
+  --success-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.922 0.005 264);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.585 0.233 264);
+  --radius: 0.75rem;
+  
+  /* Surface colors for glassmorphism */
+  --surface: oklch(0.97 0.005 264);
+  --surface-foreground: oklch(0.205 0 0);
+}
+
+.dark {
+  /* Executive Night Palette */
+  --background: oklch(0.13 0.02 264);
+  --foreground: oklch(0.98 0.005 264);
+  --card: oklch(0.18 0.025 264);
+  --card-foreground: oklch(0.98 0.005 264);
+  --popover: oklch(0.18 0.025 264);
+  --popover-foreground: oklch(0.98 0.005 264);
+  --primary: oklch(0.585 0.233 264);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.22 0.03 264);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.22 0.025 264);
+  --muted-foreground: oklch(0.65 0.02 264);
+  --accent: oklch(0.656 0.241 354);
+  --accent-foreground: oklch(0.985 0 0);
+  --success: oklch(0.696 0.17 162.48);
+  --success-foreground: oklch(0.13 0.02 264);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.28 0.03 264);
+  --input: oklch(0.22 0.025 264);
+  --ring: oklch(0.585 0.233 264);
+  
+  /* Surface colors for glassmorphism */
+  --surface: oklch(0.18 0.025 264);
+  --surface-foreground: oklch(0.98 0.005 264);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-surface: var(--surface);
+  --color-surface-foreground: var(--surface-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Glassmorphism utilities */
+@layer utilities {
+  .glass {
+    @apply bg-surface/60 backdrop-blur-xl border border-foreground/10;
+  }
+  
+  .glass-strong {
+    @apply bg-surface/80 backdrop-blur-2xl border border-foreground/15;
+  }
+  
+  .glow-primary {
+    box-shadow: 0 0 20px oklch(0.585 0.233 264 / 0.3),
+                0 0 40px oklch(0.585 0.233 264 / 0.1);
+  }
+  
+  .glow-success {
+    box-shadow: 0 0 20px oklch(0.696 0.17 162.48 / 0.3),
+                0 0 40px oklch(0.696 0.17 162.48 / 0.1);
+  }
+  
+  /* Custom scrollbar */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: oklch(0.585 0.233 264 / 0.3) transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: oklch(0.585 0.233 264 / 0.3);
+    border-radius: 3px;
+  }
+}
+
+/* Number ticker animation */
+@keyframes ticker {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+.animate-ticker {
+  animation: ticker 0.15s ease-out;
+}
