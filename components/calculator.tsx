@@ -56,7 +56,7 @@ export function Calculator() {
               value={inputs.desiredSalary}
               onChange={(v) => updateInput('desiredSalary', v)}
               min={1000}
-              max={50000}
+              max={150000}
               step={500}
             />
 
