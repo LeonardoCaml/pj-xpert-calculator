@@ -27,9 +27,9 @@ export function CustomSlider({
 }: CustomSliderProps) {
   return (
     <div className={cn('space-y-3', className)}>
-      <div className="flex items-center justify-between">
-        <label className="text-sm font-medium text-muted-foreground">{label}</label>
-        <span className="text-lg font-semibold tabular-nums text-foreground">
+      <div className="flex items-center justify-between gap-2">
+        <label className="text-xs sm:text-sm font-medium text-muted-foreground shrink-0">{label}</label>
+        <span className="text-base sm:text-lg font-semibold tabular-nums text-foreground text-right">
           {formatValue(value)}
         </span>
       </div>

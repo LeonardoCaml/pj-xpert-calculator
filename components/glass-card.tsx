@@ -11,7 +11,7 @@ export function GlassCard({ children, className, hover = false }: GlassCardProps
   return (
     <div
       className={cn(
-        'rounded-2xl bg-surface/60 backdrop-blur-xl border border-foreground/10 p-6',
+        'rounded-xl sm:rounded-2xl bg-surface/60 backdrop-blur-xl border border-foreground/10 p-4 sm:p-6',
         hover && 'transition-all duration-300 hover:bg-surface/80 hover:border-foreground/20 hover:shadow-lg hover:shadow-primary/5',
         className
       )}
@@ -31,17 +31,17 @@ interface GlassSectionProps {
 
 export function GlassSection({ title, description, icon, children, className }: GlassSectionProps) {
   return (
-    <section className={cn('space-y-6', className)}>
+    <section className={cn('space-y-4 sm:space-y-6', className)}>
       <div className="flex items-center gap-3">
         {icon && (
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+          <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
             {icon}
           </div>
         )}
         <div>
-          <h2 className="text-xl font-semibold tracking-tight text-foreground">{title}</h2>
+          <h2 className="text-lg sm:text-xl font-semibold tracking-tight text-foreground">{title}</h2>
           {description && (
-            <p className="text-sm text-muted-foreground">{description}</p>
+            <p className="text-xs sm:text-sm text-muted-foreground">{description}</p>
           )}
         </div>
       </div>

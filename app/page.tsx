@@ -36,15 +36,15 @@ export default function Home() {
             <div className="absolute right-1/4 bottom-0 h-64 w-64 rounded-full bg-success/10 blur-3xl" />
           </div>
 
-          <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-16 md:py-24 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+              <h1 className="text-balance text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
                 Calculadora Freelancer PJ
                 <span className="block text-primary">
                   Defina seu preço hora em 2026
                 </span>
               </h1>
-              <p className="mt-6 text-pretty text-lg text-muted-foreground sm:text-xl">
+              <p className="mt-4 sm:mt-6 text-pretty text-base text-muted-foreground sm:text-lg md:text-xl">
                 Descubra quanto você precisa cobrar considerando impostos, férias, 
                 custos operacionais e uma reserva de emergência. 
                 Cálculo em tempo real, 100% privado.

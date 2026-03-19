@@ -64,7 +64,7 @@ export function CostInput({ fixedCosts, onUpdateCost, className }: CostInputProp
                 type="button"
                 onClick={() => handleToggleCost(item)}
                 className={cn(
-                  'group relative flex w-full flex-col items-center gap-2 rounded-xl border p-4 transition-all duration-200',
+                  'group relative flex w-full flex-col items-center gap-1.5 sm:gap-2 rounded-xl border p-3 sm:p-4 transition-all duration-200',
                   isActive
                     ? 'border-primary bg-primary/10 shadow-md shadow-primary/10'
                     : 'border-border bg-surface/40 hover:border-primary/50 hover:bg-surface/60'
@@ -72,7 +72,7 @@ export function CostInput({ fixedCosts, onUpdateCost, className }: CostInputProp
               >
                 <div
                   className={cn(
-                    'flex h-10 w-10 items-center justify-center rounded-lg transition-colors',
+                    'flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg transition-colors',
                     isActive
                       ? 'bg-primary text-primary-foreground'
                       : 'bg-secondary text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary'
@@ -81,7 +81,7 @@ export function CostInput({ fixedCosts, onUpdateCost, className }: CostInputProp
                   {item.icon}
                 </div>
                 <span className={cn(
-                  'text-sm font-medium',
+                  'text-xs sm:text-sm font-medium text-center',
                   isActive ? 'text-primary' : 'text-muted-foreground'
                 )}>
                   {item.label}

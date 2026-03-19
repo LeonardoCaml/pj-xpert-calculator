@@ -176,15 +176,15 @@ export function Calculator() {
 
       {/* Results Dashboard - Sticky on desktop */}
       <div className="lg:sticky lg:top-8 lg:self-start">
-        <div className="flex items-center gap-3 mb-6">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-success/10 text-success">
-            <CalcIcon className="h-5 w-5" />
+        <div className="flex items-center gap-3 mb-4 sm:mb-6">
+          <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-xl bg-success/10 text-success">
+            <CalcIcon className="h-4 w-4 sm:h-5 sm:w-5" />
           </div>
           <div>
-            <h2 className="text-xl font-semibold tracking-tight text-foreground">
+            <h2 className="text-lg sm:text-xl font-semibold tracking-tight text-foreground">
               Resultado
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs sm:text-sm text-muted-foreground">
               Atualizado em tempo real
             </p>
           </div>
