@@ -150,7 +150,7 @@ export function CostInput({
                 type="button"
                 onClick={() => handleToggleCost(item)}
                 className={cn(
-                  "group relative flex w-full flex-col items-center gap-2 rounded-xl border p-4 transition-all duration-200",
+                  "group relative flex w-full flex-col items-center gap-1.5 sm:gap-2 rounded-xl border p-3 sm:p-4 transition-all duration-200",
                   isActive
                     ? "border-primary bg-primary/10 shadow-md shadow-primary/10"
                     : "border-border bg-surface/40 hover:border-primary/50 hover:bg-surface/60",
@@ -158,7 +158,7 @@ export function CostInput({
               >
                 <div
                   className={cn(
-                    "flex h-10 w-10 items-center justify-center rounded-lg transition-colors",
+                    "flex h-8 w-8 sm:h-10 sm:w-10 items-center justify-center rounded-lg transition-colors",
                     isActive
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary text-muted-foreground group-hover:bg-primary/20 group-hover:text-primary",
@@ -168,7 +168,7 @@ export function CostInput({
                 </div>
                 <span
                   className={cn(
-                    "text-sm font-medium",
+                    "text-xs sm:text-sm font-medium text-center",
                     isActive ? "text-primary" : "text-muted-foreground",
                   )}
                 >
@@ -255,7 +255,7 @@ export function CostInput({
       <div className="rounded-xl border border-border bg-surface/40 p-4 space-y-3">
         {/* Section header */}
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary text-muted-foreground">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary text-muted-foreground">
             <Plus className="h-4 w-4" />
           </div>
           <span className="text-sm font-medium text-muted-foreground">
@@ -279,7 +279,7 @@ export function CostInput({
                 }
                 placeholder={`Custo ${index + 1}`}
                 maxLength={32}
-                className="min-w-0 flex-1 bg-transparent text-sm text-foreground outline-none placeholder:text-muted-foreground/50"
+                className="w-full bg-transparent text-lg font-semibold text-foreground outline-none placeholder:text-muted-foreground/50"
               />
 
               {/* Divider */}
@@ -297,7 +297,7 @@ export function CostInput({
                   handleOtherValueChange(entry.id, e.target.value)
                 }
                 placeholder="0"
-                className="w-20 bg-transparent text-right text-sm font-semibold text-foreground outline-none placeholder:text-muted-foreground/50"
+                className="w-full bg-transparent text-lg font-semibold text-foreground outline-none placeholder:text-muted-foreground/50"
               />
 
               {/* Remove button */}
