@@ -1,35 +1,67 @@
-# pj-xpert-calculator
+# PJ Xpert Calculator
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Uma calculadora desenvolvida para ajudar profissionais e empresas a comparar, de forma rápida, os custos entre contratação CLT e prestação de serviços como Pessoa Jurídica (PJ).
 
-## Built with v0
+O objetivo do projeto é fornecer uma estimativa clara dos valores envolvidos em cada modelo de contratação, auxiliando na tomada de decisão com base em custos, encargos e remuneração líquida.
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+## Demonstração
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_zyohduuGdl4FcrQcMd8NjaWeKDEb)
+A aplicação está disponível em:
 
-## Getting Started
+**https://v0-pj-xpert-calculator.vercel.app/**
 
-First, run the development server:
+## Funcionalidades
+
+* Comparação entre contratação CLT e PJ
+* Simulação de custos e remuneração
+* Interface simples e responsiva
+* Cálculos em tempo real
+* Experiência otimizada para desktop e dispositivos móveis
+
+## Tecnologias
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* v0
+
+## Executando localmente
+
+Clone o repositório:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone <url-do-repositorio>
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd pj-xpert-calculator
+```
+
+Instale as dependências:
+
+```bash
+pnpm install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra o navegador em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-## Learn More
+## Objetivo
 
-To learn more, take a look at the following resources:
+Este projeto foi criado para oferecer uma ferramenta prática que facilite a análise financeira entre os regimes CLT e PJ, permitindo simulações rápidas e acessíveis diretamente pelo navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## Licença
 
-<a href="https://v0.app/chat/api/kiro/clone/LeonardoCaml/pj-xpert-calculator" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
+Este projeto é destinado para fins de demonstração e estudo.
